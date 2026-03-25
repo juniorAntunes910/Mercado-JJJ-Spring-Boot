@@ -11,6 +11,8 @@ public record VendaRequesDTO(
 
         @NotEmpty(message = "O carrinho não pode ser nulo/vazio!")
         List<ItemVendaRequestDTO> itens
+
+
 ){
 
 }
