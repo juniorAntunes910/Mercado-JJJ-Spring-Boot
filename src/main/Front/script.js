@@ -24,6 +24,9 @@ btn.addEventListener("click", async () => {
       <div class="card-body">
         <h2 class="card-title">${produtos.nome}</h2>
         <p>Price: R$ ${produtos.preco}</p>
+        <p>Category: R$ ${produtos.categoria.nome}</p>
+
+
       </div>
     </div>`;
   } catch (erro) {
@@ -51,6 +54,7 @@ btnC.addEventListener("click", async () => {
       body: JSON.stringify(produto),
       headers: { "Content-Type": "application/json" },
     });
+    alert("Produto Cadastrado com sucesso!");
   } catch (error) {
     alert("Erro na criação!: ", error);
     console.log(error);
