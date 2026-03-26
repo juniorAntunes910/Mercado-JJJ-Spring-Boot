@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    margin-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #carrinho{
+    transform: translateY(30px);
+}
+
+#search{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#search h1{
+    margin-bottom: 1rem;
+}
+
+
+

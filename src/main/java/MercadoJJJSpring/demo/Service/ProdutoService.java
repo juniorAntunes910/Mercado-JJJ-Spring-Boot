@@ -36,6 +36,14 @@ public class ProdutoService {
         return prod;
     }
 
+    public ProdutoEntity retornaPorNome(String name){
+        ProdutoEntity prod = produtoRepository.findByNome(name);
+        if(prod == null){
+            throw new RuntimeException("Nome do Produto não encontrado");
+        }
+        return prod;
+    }
+
 
     @Transactional
     public ProdutoResponseDTO cadastrar(ProdutoRequestDTO dto){

@@ -31,6 +31,11 @@ public class ProdutoController {
         return ResponseEntity.ok(produtoService.retornaProdutoPorID(id));
     }
 
+    @GetMapping("/nome{nome}")
+    public ResponseEntity<ProdutoEntity> retornaPorNome(@PathVariable String nome){
+        return ResponseEntity.ok(produtoService.retornaPorNome(nome));
+    }
+
 
 
     @PostMapping

@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado JJJ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        
+
+        <div>
+            <img src="assets/img/menu.png" alt="Menu hamburguer">
+        </div>
+        <div id="carrinho">
+            <img src="assets/img/carrinho.png" alt="Carrinho">
+        </div>
+
     </header>
 
     <main>
+        <section id="search">
+            <h1>
+                Hello User, What product <br>
+                do you want today?
+            </h1>
+
+            <div>
+                <label for="buscarProduto">Pesquisar produtos: </label>
+                <input type="text" id="buscarProduto" placeholder="Ex: Fent">
+                <button id="btnBuscar">Buscar</button>
+                <script src="script.js"></script>
+            </div>
+            <h2>Results</h2>
+            <ul id="listaResultados">
+                <li>Em produção</li>
+            </ul>
+        </section>
 
     </main>
 
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
